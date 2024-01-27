@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using StarterAssets;
 using UnityEngine;
 using Yarn.Unity;
 
-public class PlayerDialogue : MonoBehaviour
-{
+public class PlayerDialogue : MonoBehaviour {
+    public ThirdPersonController ThirdPersonController;
     public DialogueRunner dr;
 
     public string startNode = "";
@@ -17,14 +18,18 @@ public class PlayerDialogue : MonoBehaviour
 
     public void Awake()
     {
+        dr.onDialogueStart.AddListener(() => ToggleLockCamera(true));
+        dr.onDialogueComplete.AddListener(() => ToggleLockCamera(false));
+
         dr.AddCommandHandler<int>(
             "add_Interaction",    
             addInteraction 
         );
-
-        
     }
 
+    private void ToggleLockCamera(bool value) {
+        ThirdPersonController.LockCameraPosition = value;
+    }
 
     private void addInteraction(int dir)
     {
