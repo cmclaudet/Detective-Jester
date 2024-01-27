@@ -5644,6 +5644,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerArmatureCustom
       objectReference: {fileID: 0}
+    - target: {fileID: 8572353042372896783, guid: 321c1b0edc21a4dbeab7bc7bcb26463b, type: 3}
+      propertyPath: cursorLocked
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:

@@ -2,12 +2,28 @@
 tags:
 ---
 ===
-title:NPC1
+title:NPC1_1
 tags:
 ---
-<<add_Interaction PlayerDialogue>>
-NPC1: You are currently talking to me, NPC1!
 
+NPC1: You are currently talking to me, NPC1!
+    -> Add one 
+        <<add_Interaction 1>>
+    -> Remove one
+        <<add_Interaction -1>>
+
+===
+title:NPC1_2
+tags:
+---
+
+NPC1: Why do you keep trying to talk to me?
+NPC1: This is boring
+===
+title:NPC1_3
+tags:
+---
+NPC1: I have nothing else to say.
 ===
 
 title:NPC2
@@ -30,4 +46,26 @@ title:King
 tags:
 ---
 King: You are currently talking to me, THE KING!
+===
+title:Cleaner
+tags:
+---
+Cleaner: That old jester was a good one!
+===
+title:Phase2
+tags:
+---
+King: You are currently talking to me, THE KING!
+Jester: I heard you like _____.
+    -> Apples
+        <<loseLife 1>>
+    -> Oranges
+        <<loseLife 1>>
+    -> Pineapples
+        <<getLaught 1>>
+===
+title:BadEnding
+tags:
+---
+King: You Die!
 ===
