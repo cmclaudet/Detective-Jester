@@ -5,6 +5,7 @@ using Yarn.Unity;
 using UnityEngine.InputSystem;
 using Cinemachine;
 
+
 public class GameManager : MonoBehaviour
 {
     public DialogueRunner dr;
@@ -12,6 +13,9 @@ public class GameManager : MonoBehaviour
     private int lives = 2;
     private int laughts = 0;
     public List<CinemachineVirtualCamera> cams = new List<CinemachineVirtualCamera>();
+    public Transform JestingPoint;
+    public GameObject Player;
+
 
 
 
@@ -44,6 +48,7 @@ public class GameManager : MonoBehaviour
 
     public void phase2(int x)
     {
+        Player.transform.position = JestingPoint.position;
         StartCoroutine(camSlide());
         dr.Stop();
         pi.DeactivateInput();
@@ -53,6 +58,7 @@ public class GameManager : MonoBehaviour
 
     IEnumerator camSlide()
     {
+        pi.DeactivateInput();
         cams[1].Priority = 100;
         yield return new WaitForSeconds(3f);
         cams[2].Priority = 200;

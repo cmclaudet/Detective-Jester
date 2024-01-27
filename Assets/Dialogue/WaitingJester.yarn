@@ -1,0 +1,6 @@
+﻿title: WaitingJester
+tags:
+---
+<<declare $random= dice(6)>>
+Waiting Jester: 
+===
