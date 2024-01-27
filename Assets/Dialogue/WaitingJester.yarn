@@ -1,6 +1,23 @@
-﻿title: WaitingJester
+﻿///THIS IS GAMEJAM CODE PLS IGNORE ALL THE IF STATEMENTS
+title: WaitingJester
 tags:
 ---
-<<declare $random= dice(6)>>
-Waiting Jester: 
+<<declare $random= 0>>
+$random = dice(7);
+
+<<if $random is 1>> 
+    Waiting Jester: I brought all my puns!
+<<elseif $random is 2>>    
+    Waiting Jester: My jokes are pun-beliavable!
+<<elseif $random is 3>>    
+    Waiting Jester: I will make him laugh punderfully!
+<<elseif $random is 4>>    
+    Waiting Jester: What are these screams from behind the doors? These guys need to brush off their pun game.
+<<elseif $random is 5>>    
+    Waiting Jester: A great pun is its own reword.
+<<elseif $random is 6>>    
+    Waiting Jester: I brought my best material. I hope the king will punderstand.
+<<elseif $random is 7>>    
+    Waiting Jester: What a queue! Punchline.
+<<endif>>
 ===
