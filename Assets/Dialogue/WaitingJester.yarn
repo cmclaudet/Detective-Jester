@@ -3,7 +3,7 @@ title: WaitingJester
 tags:
 ---
 <<declare $random= 0>>
-$random = dice(7);
+<<set $random = dice(7)>>
 
 <<if $random is 1>> 
     Waiting Jester: I brought all my puns!
