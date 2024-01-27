@@ -193,9 +193,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07c7958e747e2c449995bb3f62ca7fad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerInput: {fileID: 5425811258327800900}
   ThirdPersonController: {fileID: 212925156200600012}
   dr: {fileID: 0}
-  startNode: 
+  onDialogueStart:
+    m_PersistentCalls:
+      m_Calls: []
   ButtonPrompt: {fileID: 0}
 --- !u!1 &395770733766787679
 GameObject:

@@ -2,13 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using StarterAssets;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.InputSystem;
 using Yarn.Unity;
 
 public class PlayerDialogue : MonoBehaviour {
+    public PlayerInput PlayerInput;
     public ThirdPersonController ThirdPersonController;
     public DialogueRunner dr;
 
-    public string startNode = "";
+    string startNode = "";
+    UnityEvent onDialogueStart;
 
 
     private int interactions = 0;
@@ -19,7 +23,10 @@ public class PlayerDialogue : MonoBehaviour {
     public void Awake()
     {
         dr.onDialogueStart.AddListener(() => ToggleLockCamera(true));
-        dr.onDialogueComplete.AddListener(() => ToggleLockCamera(false));
+        dr.onDialogueComplete.AddListener(() => {
+                                              ToggleLockCamera(false);
+                                              PlayerInput.ActivateInput();
+                                          });
 
         dr.AddCommandHandler<int>(
             "add_Interaction",    
@@ -49,7 +56,7 @@ public class PlayerDialogue : MonoBehaviour {
     {
        if(Input.GetKeyDown("e") && startNode != "" && !dr.IsDialogueRunning)
         {
-            dr.StartDialogue(startNode);
+            StartDialogue();
         }
        if(Input.GetKeyDown("r") && dr.IsDialogueRunning)
         {
@@ -61,9 +68,18 @@ public class PlayerDialogue : MonoBehaviour {
     {
         ButtonPrompt.SetActive(true);
         Debug.Log("Enter" +  other.name);
-        if(other.GetComponent<DialogueManager>() != null)
+        DialogueManager dialogueManager = other.GetComponent<DialogueManager>();
+        if(dialogueManager != null)
         {
-            startNode = other.GetComponent<DialogueManager>().startNode;
+            startNode = dialogueManager.startNode;
+            if (dialogueManager.onDialogueStart != null) {
+                onDialogueStart = dialogueManager.onDialogueStart;
+            }
+            if (dialogueManager.shouldOneTimeTrigger) {
+                StartDialogue();
+                PlayerInput.DeactivateInput();
+                dialogueManager.shouldOneTimeTrigger = false;
+            }
         }
     }
 
@@ -73,13 +89,22 @@ public class PlayerDialogue : MonoBehaviour {
         {
             ButtonPrompt.SetActive(false);
             startNode = "";
-            dr.Stop();
+            onDialogueStart = null;
+            StopDialogue();
         }
     }
 
-    
+    private void StartDialogue() {
+        if (onDialogueStart != null) {
+            onDialogueStart.Invoke();
+        }
+        dr.StartDialogue(startNode);
+    }
 
-
+    private void StopDialogue() {
+        dr.Stop();
+        PlayerInput.ActivateInput();
+    }
    
     
 
