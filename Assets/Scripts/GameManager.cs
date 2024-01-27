@@ -22,6 +22,10 @@ public class GameManager : MonoBehaviour
             "getLaught",
             getLaugh
         );
+        dr.AddCommandHandler<int>(
+            "startPhase2",
+            phase2
+        );
     }
     // Start is called before the first frame update
     void Start()
@@ -32,14 +36,12 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("g"))
-        {
-            phase2();
-        }
+       
     }
 
-    public void phase2()
+    public void phase2(int x)
     {
+        dr.Stop();
         pi.DeactivateInput();
         dr.StartDialogue("Phase2");
         

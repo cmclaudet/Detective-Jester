@@ -1,0 +1,8 @@
+﻿title:startPhase2
+tags:
+---
+The Kings Guard: Are you ready to start the show? There is no going back!
+    -> Yes! I'm ready.
+        <<startPhase2 1>>
+    -> Actually let me gather more info...
+===
