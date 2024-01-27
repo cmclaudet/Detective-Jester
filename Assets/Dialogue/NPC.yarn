@@ -2,7 +2,7 @@
 tags:
 ---
 ===
-title:NPC1
+title:NPC1_1
 tags:
 ---
 
@@ -12,7 +12,18 @@ NPC1: You are currently talking to me, NPC1!
     -> Remove one
         <<add_Interaction -1>>
 
+===
+title:NPC1_2
+tags:
+---
 
+NPC1: Why do you keep trying to talk to me?
+NPC1: This is boring
+===
+title:NPC1_3
+tags:
+---
+NPC1: I have nothing else to say.
 ===
 
 title:NPC2
@@ -49,7 +60,7 @@ Jester: I heard you like _____.
     -> Apples
         <<loseLife 1>>
     -> Oranges
-        <<loseLife 2>>
+        <<loseLife 1>>
     -> Pineapples
         <<getLaught 1>>
 ===
