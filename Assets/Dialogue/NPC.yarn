@@ -5,8 +5,13 @@ tags:
 title:NPC1
 tags:
 ---
-<<add_Interaction PlayerDialogue>>
+
 NPC1: You are currently talking to me, NPC1!
+    -> Add one 
+        <<add_Interaction 1>>
+    -> Remove one
+        <<add_Interaction -1>>
+
 
 ===
 

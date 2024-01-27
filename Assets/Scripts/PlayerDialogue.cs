@@ -12,10 +12,12 @@ public class PlayerDialogue : MonoBehaviour
 
     private int interactions = 0;
 
+    public GameObject ButtonPrompt;
+
 
     public void Awake()
     {
-        dr.AddCommandHandler<GameObject>(
+        dr.AddCommandHandler<int>(
             "add_Interaction",    
             addInteraction 
         );
@@ -24,9 +26,10 @@ public class PlayerDialogue : MonoBehaviour
     }
 
 
-    private void addInteraction(GameObject target)
+    private void addInteraction(int dir)
     {
-        interactions += 1;
+        interactions += dir;
+        Debug.Log(interactions);
     }
 
     private int getInteraction(GameObject target)
@@ -51,6 +54,7 @@ public class PlayerDialogue : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        ButtonPrompt.SetActive(true);
         Debug.Log("Enter" +  other.name);
         if(other.GetComponent<DialogueManager>() != null)
         {
@@ -62,6 +66,7 @@ public class PlayerDialogue : MonoBehaviour
     {
         if (other.GetComponent<DialogueManager>() != null)
         {
+            ButtonPrompt.SetActive(false);
             startNode = "";
             dr.Stop();
         }
