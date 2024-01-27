@@ -4,12 +4,14 @@ using UnityEngine;
 using Yarn.Unity;
 using UnityEngine.InputSystem;
 using Cinemachine;
+using StarterAssets;
 
 
 public class GameManager : MonoBehaviour
 {
     public DialogueRunner dr;
     public PlayerInput pi;
+    public ThirdPersonController tpc;
     private int lives = 2;
     private int laughts = 0;
     public List<CinemachineVirtualCamera> cams = new List<CinemachineVirtualCamera>();
@@ -48,10 +50,11 @@ public class GameManager : MonoBehaviour
 
     public void phase2(int x)
     {
+        dr.Stop();
         Player.transform.position = JestingPoint.position;
         StartCoroutine(camSlide());
-        dr.Stop();
-        pi.DeactivateInput();
+        tpc.MoveSpeed = 0;
+        tpc.SprintSpeed = 0;
         //dr.StartDialogue("Phase2");
         
     }
