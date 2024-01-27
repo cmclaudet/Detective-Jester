@@ -4,6 +4,7 @@ using UnityEngine;
 using Yarn.Unity;
 using UnityEngine.InputSystem;
 using Cinemachine;
+using DefaultNamespace;
 using StarterAssets;
 
 
@@ -14,15 +15,19 @@ public class GameManager : MonoBehaviour
     public ThirdPersonController tpc;
     private int lives = 2;
     private int laughts = 0;
+    [SerializeField] private int dialoguesReadPhase2Threshold;
+    [SerializeField] private int uniqueDialoguesReadPhase2Threshold;
+    [SerializeField] private StartPhase2DialogueManager startPhase2DialogueManager;
+    [SerializeField] private DeactivateJesters deactivateJesters;
+    
     public List<CinemachineVirtualCamera> cams = new List<CinemachineVirtualCamera>();
     public Transform JestingPoint;
     public GameObject Player;
+    
+    private readonly List<string> fullyReadDialoguesByName = new ();
+    private int totalDialogueInteractionsCount;
 
-
-
-
-    private void Awake()
-    {
+    private void Awake() {
         dr.AddCommandHandler<int>(
             "loseLife",
             loseLife
@@ -85,6 +90,29 @@ public class GameManager : MonoBehaviour
         if(laughts >= 5)
         {
             goodEnding();
+        }
+    }
+
+    public void TryAddReadDialogue(string name) {
+        if (fullyReadDialoguesByName.Contains(name) == false)
+        {
+            fullyReadDialoguesByName.Add(name);
+            deactivateJesters.DeactivateJester(fullyReadDialoguesByName.Count);
+        }
+        IncrementDialogueInteractions();
+        CheckPhase2Unlock();
+    }
+
+    public void IncrementDialogueInteractions() {
+        totalDialogueInteractionsCount++;
+        CheckPhase2Unlock();
+    }
+
+    private void CheckPhase2Unlock() {
+        if (totalDialogueInteractionsCount >= dialoguesReadPhase2Threshold ||
+            fullyReadDialoguesByName.Count >= (uniqueDialoguesReadPhase2Threshold)) {
+            startPhase2DialogueManager.ActivatePhase2StartNode();
+            deactivateJesters.DeactivateAllJesters();
         }
     }
 

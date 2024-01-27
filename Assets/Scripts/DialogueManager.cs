@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,15 +9,27 @@ using Yarn.Unity;
 public class DialogueManager : MonoBehaviour
 {
     // public string startNode;
-    public string[] startNodes;
+    [SerializeField] string[] startNodes;
+    [HideInInspector]public string[] activeStartNodes;
     public bool shouldOneTimeTrigger = false;
+    public bool shouldIncrementDialogueInteractions = true;
     public UnityEvent onDialogueStart;
 
     public int startNodeIndex { get; private set; }
+    public bool isSeen { get; private set; }
+
+    private void Awake() {
+        SetStartNodes();
+    }
+
+    private void SetStartNodes() {
+        activeStartNodes = startNodes;
+    }
 
     public void IncrementNodeIndex() {
         if (startNodeIndex >= startNodes.Length - 1) {
             startNodeIndex = 0;
+            isSeen = true;
         } else {
             startNodeIndex += 1;
         }

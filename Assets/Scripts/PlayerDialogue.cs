@@ -10,6 +10,7 @@ public class PlayerDialogue : MonoBehaviour {
     public PlayerInput PlayerInput;
     public ThirdPersonController ThirdPersonController;
     public DialogueRunner dr;
+    public GameManager GameManager;
 
     private DialogueManager activeDialogueManager;
 
@@ -93,8 +94,16 @@ public class PlayerDialogue : MonoBehaviour {
         if (activeDialogueManager.onDialogueStart != null) {
             activeDialogueManager.onDialogueStart.Invoke();
         }
-        dr.StartDialogue(activeDialogueManager.startNodes[activeDialogueManager.startNodeIndex]);
+        dr.StartDialogue(activeDialogueManager.activeStartNodes[activeDialogueManager.startNodeIndex]);
         activeDialogueManager.IncrementNodeIndex();
+
+        if (activeDialogueManager.shouldIncrementDialogueInteractions) {
+            if (activeDialogueManager.isSeen) {
+                GameManager.TryAddReadDialogue(activeDialogueManager.gameObject.name);
+            } else {
+                GameManager.IncrementDialogueInteractions();
+            }
+        }
     }
     
 
