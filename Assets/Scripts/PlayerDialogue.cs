@@ -8,11 +8,44 @@ public class PlayerDialogue : MonoBehaviour
     public DialogueRunner dr;
 
     public string startNode = "";
+
+
+    private int interactions = 0;
+
+
+    public void Awake()
+    {
+        dr.AddCommandHandler<GameObject>(
+            "add_Interaction",    
+            addInteraction 
+        );
+
+        
+    }
+
+
+    private void addInteraction(GameObject target)
+    {
+        interactions += 1;
+    }
+
+    private int getInteraction(GameObject target)
+    {
+        return interactions;
+    }
+
+
+
+
     private void Update()
     {
-       if(Input.GetKeyDown("e") && startNode != "")
+       if(Input.GetKeyDown("e") && startNode != "" && !dr.IsDialogueRunning)
         {
             dr.StartDialogue(startNode);
+        }
+       if(Input.GetKeyDown("r") && dr.IsDialogueRunning)
+        {
+            dr.Stop();
         }
     }
 
@@ -30,10 +63,15 @@ public class PlayerDialogue : MonoBehaviour
         if (other.GetComponent<DialogueManager>() != null)
         {
             startNode = "";
+            dr.Stop();
         }
     }
 
+    
 
+
+   
+    
 
 
 
