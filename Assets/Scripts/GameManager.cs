@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Yarn.Unity;
 using UnityEngine.InputSystem;
+using Cinemachine;
 
 public class GameManager : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class GameManager : MonoBehaviour
     public PlayerInput pi;
     private int lives = 2;
     private int laughts = 0;
+    public List<CinemachineVirtualCamera> cams = new List<CinemachineVirtualCamera>();
+
 
 
     private void Awake()
@@ -41,13 +44,22 @@ public class GameManager : MonoBehaviour
 
     public void phase2(int x)
     {
+        StartCoroutine(camSlide());
         dr.Stop();
         pi.DeactivateInput();
-        dr.StartDialogue("Phase2");
+        //dr.StartDialogue("Phase2");
         
     }
 
-
+    IEnumerator camSlide()
+    {
+        cams[1].Priority = 100;
+        yield return new WaitForSeconds(3f);
+        cams[2].Priority = 200;
+        yield return new WaitForSeconds(2f);
+        dr.StartDialogue("Phase2");
+        yield return null;
+    }
 
     public void loseLife(int x)
     {

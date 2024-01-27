@@ -55,6 +55,7 @@ public class PlayerDialogue : MonoBehaviour {
        if(Input.GetKeyDown("e") && activeDialogueManager != null && !dr.IsDialogueRunning)
         {
             StartDialogue();
+            ButtonPrompt.SetActive(false);
         }
        if(Input.GetKeyDown("r") && dr.IsDialogueRunning)
         {
