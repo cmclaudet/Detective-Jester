@@ -17,7 +17,6 @@ public class GameManager : MonoBehaviour
     [SerializeField] private int lives = 2;
     [SerializeField] private int laughts = 0;
     [SerializeField] private int dialoguesReadPhase2Threshold;
-    [SerializeField] private int uniqueDialoguesReadPhase2Threshold;
     [SerializeField] private StartPhase2DialogueManager startPhase2DialogueManager;
     [SerializeField] private DeactivateJesters deactivateJesters;
     [SerializeField] private SoundManager SoundManager;
@@ -149,12 +148,12 @@ public class GameManager : MonoBehaviour
 
     public void IncrementDialogueInteractions() {
         totalDialogueInteractionsCount++;
+        Debug.Log($"total interactions: {totalDialogueInteractionsCount}");
         CheckPhase2Unlock();
     }
 
     private void CheckPhase2Unlock() {
-        if (totalDialogueInteractionsCount >= dialoguesReadPhase2Threshold ||
-            fullyReadDialoguesByName.Count >= (uniqueDialoguesReadPhase2Threshold)) {
+        if (totalDialogueInteractionsCount >= dialoguesReadPhase2Threshold) {
             startPhase2DialogueManager.ActivatePhase2StartNode();
             deactivateJesters.DeactivateAllJesters();
         }
