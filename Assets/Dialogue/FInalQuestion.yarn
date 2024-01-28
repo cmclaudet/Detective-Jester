@@ -2,4 +2,55 @@
 tags:
 ---
 
+King: You tire me, jester. But you’re not offensive either… I know what to do. I command you to… JUGGLE for me!
+
+    -> Start juggling slowly
+        *I think this might be a bad idea*
+        <<jump Phase2_1>>
+
+    -> Start juggling enthusiastically
+        *I think I should try something else*
+        <<jump Phase2_1>>
+
+    -> Start juggling while dancing
+        *I have a feeling the king wouldn't like that*
+        <<jump Phase2_1>>
+===
+
+title: Phase2_1
+tags:
+---
+
+King: What are you waiting for?
+
+    -> Start juggling slowly
+        *I think this might be a bad idea*
+        <<jump Phase2_2>>
+
+    -> Start juggling enthusiastically
+        *I think I should try something else*
+        <<jump Phase2_2>>
+
+    -> Start juggling while dancing
+        *I have a feeling the king wouldn't like that*
+        <<jump Phase2_2>>
+===
+
+title: Phase2_2
+tags:
+---
+
+King: Juggle for me, jester!
+
+    -> Start juggling slowly
+        *I think this might be a bad idea*
+        <<jump Phase2_1>>
+
+    -> Start juggling enthusiastically
+        *I think I should try something else*
+        <<jump Phase2_1>>
+
+    -> Start juggling while dancing
+        *I have a feeling the king wouldn't like that*
+        <<jump Phase2_1>>
 ===
