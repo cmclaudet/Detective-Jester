@@ -110,7 +110,7 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(3f);
         cams[2].Priority = 200;
         yield return new WaitForSeconds(2f);
-        dr.StartDialogue("Phase2");
+        dr.StartDialogue("Question1");
         yield return null;
     }
 
