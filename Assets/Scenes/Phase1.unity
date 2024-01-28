@@ -7022,6 +7022,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 7991787249301319013}
     - target: {fileID: 2624122706106391651, guid: 0a1276f90da5845748a55d234817dd53, type: 3}
+      propertyPath: SoundManager
+      value: 
+      objectReference: {fileID: 1039974077}
+    - target: {fileID: 2624122706106391651, guid: 0a1276f90da5845748a55d234817dd53, type: 3}
       propertyPath: deactivateJesters
       value: 
       objectReference: {fileID: 882271718}
@@ -16386,6 +16390,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14b86eb1cff23ea4cab4c39119668cfc, type: 3}
+--- !u!114 &1039974077 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8388062545476928313, guid: 14b86eb1cff23ea4cab4c39119668cfc, type: 3}
+  m_PrefabInstance: {fileID: 1039974076}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 715b487b6dca5ce468386b61fef3efe3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1044239175
 PrefabInstance:
   m_ObjectHideFlags: 0
