@@ -125,7 +125,7 @@ public class GameManager : MonoBehaviour
     public void getLaugh(int x)
     {
         laughts += x;
-        if(laughts >= 4)
+        if(laughts >= 3)
         {
             finalQuestion();
         }
