@@ -1,5 +1,6 @@
 ﻿title: BadEnding
 tags:
 ---
-
+King: Thats enough!
+<<triggerEnding false>>
 ===

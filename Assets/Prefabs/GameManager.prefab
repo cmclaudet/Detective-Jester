@@ -58,6 +58,9 @@ MonoBehaviour:
   - {fileID: 0}
   JestingPoint: {fileID: 0}
   Player: {fileID: 0}
+  cameraCutoff: -18
+  boulder: {fileID: 7319303041250700948, guid: 2a61246f4263f604699cf647864ec6b1, type: 3}
+  boulderYOffset: 4
 --- !u!82 &8687674251788751217
 AudioSource:
   m_ObjectHideFlags: 0
