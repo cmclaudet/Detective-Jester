@@ -6,6 +6,8 @@ namespace DefaultNamespace {
 
     public void ActivatePhase2StartNode() {
       base.activeStartNodes = new[] { phase2StartNode };
+      startNodeIndex = 0;
+      isSeen = false;
     }
   }
 }
