@@ -87,9 +87,9 @@ public class GameManager : MonoBehaviour
     public void getLaugh(int x)
     {
         laughts += x;
-        if(laughts >= 5)
+        if(laughts >= 4)
         {
-            goodEnding();
+            finalQuestion();
         }
     }
 
@@ -122,10 +122,10 @@ public class GameManager : MonoBehaviour
         dr.StartDialogue("BadEnding");
     }
 
-    private void goodEnding()
+    private void finalQuestion()
     {
         dr.Stop();
-        dr.StartDialogue("GoodEnding");
+        dr.StartDialogue("FinalQuestion");
     }
     
     
