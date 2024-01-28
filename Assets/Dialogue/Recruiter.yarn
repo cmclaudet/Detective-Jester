@@ -5,6 +5,71 @@ Recruiter: Hey, you must be the new jester! We are soooooo excited to have you h
 
 Recruiter: I have penciled you in for entertaining our king this evening! He is very easy-going, don't worry. You can joke about absolutely anything!
 
-Recruiter: Explore the castle and our staff while you wait for your turn.
+Recruiter: Just don’t say anything that could offend him…
+
+Recruiter: Oh, and for the love of god, please don’t juggle. 
+
+Recruiter: Anything but juggling! 
+
+Recruiter: Do you understand me?
+
+    -> Yes
+        <<jump RecruiterIntro2>>
+    -> Absolutely
+        <<jump RecruiterIntro2>>
+===
+
+title: RecruiterIntro2
+tags:
+---
+Recruiter: Say it with me: “I won’t juggle”.
+
+-> I won’t juggle
+<<jump RecruiterIntro3>>
+
+===
+
+title: RecruiterIntro3
+tags:
+---
+Recruiter: Good. Now explore the castle and talk to the rest of our staff while you wait for your turn. I’m sure you’ll make great friends here.
+
+
+===
+
+
+title: RecruiterIdle1
+tags: 
+---
+Recruiter: So glad to have you on the team.
+
+===
+
+title: RecruiterIdle2
+tags: 
+---
+Recruiter: Remember: No juggling!
+
+===
+
+title: RecruiterIdle3
+tags: 
+---
+Recruiter: You’re going to do great.
+
+
+===
+
+title: RecruiterIdle4
+tags: 
+---
+Recruiter: Did you know you have great dental insurance as part of your employment in the castle?
+
+===
+
+title: RecruiterIdle5
+tags: 
+---
+Recruiter: Go on then, take your time and breathe in all the exciting opportunities this castle provides.
 
 ===
