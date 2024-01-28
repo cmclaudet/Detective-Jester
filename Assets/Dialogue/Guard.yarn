@@ -1,7 +1,7 @@
 ﻿title: Guard
 tags:
 ---
-<<playSound tamas_long2>>
+<<playSound tamas_long_2>>
 Guard: I am the head of the royal guard. You may address me as Sir, or not address me at all.
 
 <<playSound tamas_medium_1>>
@@ -32,7 +32,7 @@ Guard: It’s not your turn yet. Go find someone else to quack up.
 title: GuardAfterClues
 tags:
 ---
-<<playSound tamas_long1>>
+<<playSound tamas_long_1>>
 Guard: It is your turn, comedi-hen. The king awaits. You're sure you're ready for this?
 
 <<playSound tamas_medium_2>>
