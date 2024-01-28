@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     public DialogueRunner dr;
     public PlayerInput pi;
     public ThirdPersonController tpc;
-    private int lives = 2;
+    [SerializeField] private int lives = 2;
     private int laughts = 0;
     [SerializeField] private int dialoguesReadPhase2Threshold;
     [SerializeField] private int uniqueDialoguesReadPhase2Threshold;
@@ -50,6 +50,10 @@ public class GameManager : MonoBehaviour
         dr.AddCommandHandler<bool>(
             "triggerEnding",
             ending
+            );
+        dr.AddCommandHandler<bool>(
+            "allowMovement",
+            allowMovement
             );
     }
     // Start is called before the first frame update
@@ -163,9 +167,17 @@ public class GameManager : MonoBehaviour
             Instantiate(boulder, boulderPos, Quaternion.identity);
             dr.Stop();
             dr.StartDialogue("Death");
+            Player.SetActive(false);
             
             //Death
         }
+    }
+
+    public void allowMovement(bool b)
+    {
+        pi.ActivateInput();
+        tpc.MoveSpeed = 2;
+        tpc.SprintSpeed = 5.3f;
     }
     
 }
