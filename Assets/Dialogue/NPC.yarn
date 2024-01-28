@@ -60,8 +60,4 @@ Jester: I heard you like _____.
     -> Pineapples
         <<getLaugh 1>>
 ===
-title:BadEnding
-tags:
----
-King: You Die!
-===
+
