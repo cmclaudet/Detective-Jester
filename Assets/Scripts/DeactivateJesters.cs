@@ -5,7 +5,7 @@ namespace DefaultNamespace {
     public GameObject[] Jesters;
 
     public void DeactivateJester(int dialoguesRead) {
-      if (dialoguesRead <= Jesters.Length) {
+      if (dialoguesRead <= Jesters.Length - 1) {
         Jesters[dialoguesRead - 1].SetActive(false);
       }
     }
