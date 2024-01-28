@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 using Cinemachine;
 using DefaultNamespace;
 using StarterAssets;
+using UnityEngine.SceneManagement;
 
 
 public class GameManager : MonoBehaviour
@@ -60,6 +61,10 @@ public class GameManager : MonoBehaviour
         dr.AddCommandHandler<string>(
             "playSound",
             playSound
+            );
+        dr.AddCommandHandler<string>(
+            "switchScreen",
+            switchScreen    
             );
     }
     // Start is called before the first frame update
@@ -194,6 +199,11 @@ public class GameManager : MonoBehaviour
         pi.ActivateInput();
         tpc.MoveSpeed = 2;
         tpc.SprintSpeed = 5.3f;
+    }
+
+    public void switchScreen(string name)
+    {
+        SceneManager.LoadScene(name);
     }
     
 }
