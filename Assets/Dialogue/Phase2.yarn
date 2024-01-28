@@ -10,4 +10,13 @@ The Kings Guard: Are you ready to start the show? There is no going back!
     -> Yes! I'm ready.
         <<startPhase2 1>>
     -> Actually let me gather more info...
+King: You are currently talking to me, THE KING!
+Jester: I heard you like _____.
+    -> Apples
+        <<loseLife 1>>
+    -> Oranges
+        <<loseLife 1>>
+    -> Pineapples
+        <<getLaugh 1>>    
 ===
+

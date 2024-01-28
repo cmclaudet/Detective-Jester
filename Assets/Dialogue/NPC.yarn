@@ -58,7 +58,7 @@ Jester: I heard you like _____.
     -> Oranges
         <<loseLife 1>>
     -> Pineapples
-        <<getLaught 1>>
+        <<getLaugh 1>>
 ===
 title:BadEnding
 tags:

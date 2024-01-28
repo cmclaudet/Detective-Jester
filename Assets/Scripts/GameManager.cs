@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
             loseLife
         );
         dr.AddCommandHandler<int>(
-            "getLaught",
+            "getLaugh",
             getLaugh
         );
         dr.AddCommandHandler<int>(
