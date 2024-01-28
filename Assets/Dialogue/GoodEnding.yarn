@@ -3,15 +3,24 @@ tags:
 ---
 
 King: What is he doing?
+<<playSound king_confused1>>
 King: Did he just walk away?
+<<playSound king_agreeing2>>
 King: Guards?
+<<playSound king_angry3>>
 King: GUARDS!
+<<playSound king_angry2>>
 King: ...
-King: That's new...
 King: The nerve...
+<<playSound king_angry1>>
+King: It is something I've never seen, though...
+<<playSound king_agreeing>>
 King: ...
 King: Ha...
+<<playSound king_laughing1>>
 King: Ha ha ha...
+<<playSound king_laughing2>>
 Kind: HA HA HA HA HA!
+<<playSound king_laughing3>>
 <<switchScene winScreen>>
 ===

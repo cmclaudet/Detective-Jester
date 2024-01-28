@@ -3,7 +3,7 @@ tags:
 ---
 
 King: You tire me, jester. But you’re not offensive either… I know what to do. I command you to… JUGGLE for me!
-
+<<playSound king_groaning>>
     <<allowMovement true>>
     -> Start juggling slowly
         *I think this might be a bad idea*
@@ -23,6 +23,7 @@ tags:
 ---
 
 King: What are you waiting for?
+<<playSound king_bored>>
     <<allowMovement true>>
     -> Start juggling slowly
         *I think this might be a bad idea*
@@ -42,6 +43,7 @@ tags:
 ---
 
 King: Juggle for me, jester!
+<<playSound king_bored2>>
     <<allowMovement true>>  
 
     -> Start juggling slowly

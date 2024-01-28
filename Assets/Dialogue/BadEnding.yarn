@@ -2,6 +2,7 @@
 tags:
 ---
 King: I've had enough of this. Goodbye, jester.
+<<playSound king_angry1>>
 <<triggerEnding false>>
 ===
 

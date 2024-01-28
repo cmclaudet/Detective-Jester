@@ -2,7 +2,10 @@
 tags:
 ---
 King: Ha...
+<<playSound king_laughing1>>
 King: Ha ha ha...
+<<playSound king_laughing2>>
 King: Send in the next one!
+<<playSound king_angry3>>
 <<switchScene loseScreen>>
 ===
