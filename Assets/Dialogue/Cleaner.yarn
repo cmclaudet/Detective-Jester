@@ -2,6 +2,7 @@
 tags:
 ---
 Cleaner: “Keeping the castle clean one body at a time…”
+<<playSound cat_medium_2>>
 
 ===
 
@@ -9,12 +10,14 @@ title: Cleaner2
 tags:
 ---
 Cleaner: The important thing you have to learn is how to step around all the bodies. Don’t worry, you’ll figure it out. It’s not that hard, even the knuckleheads from the Kerven Empire could do it.
+<<playSound cat_long_1>>
 
 ===
 title: Cleaner3
 tags:
 ---
-Cleaner: What do you think about my new uniform? Wearing green really hides all the blood stains, don’t you think?  
+Cleaner: What do you think about my new uniform? Wearing green really hides all the blood stains, don’t you think?
+<<playSound cat_short_what_1>>
 
 ===
 
@@ -22,6 +25,7 @@ title: Cleaner4
 tags:
 ---
 Cleaner: What the hell are you guys eating… I swear the jesters of yesterday were much lighter…
+<<playSound cat_medium_1>>
 
 ===
 
@@ -29,18 +33,21 @@ title: Cleaner5
 tags:
 ---
 Cleaner: So, what are you up to after work? Ah, nevermind…
+<<playSound cat_what_1>>
 
 ===
 title: BodyPile
 tags:
 ---
 Cleaner: Hah, This one looks just like you.
+<<playSound cat_short_blip_1>>
 
 ===
 title: DeadJester
 tags:
 ---
 Cleaner: Don’t worry, that’s probably not the real prince. Just another masked fool…
+<<playSound cat_short_hmm_1>>
 
 ===
 
@@ -48,6 +55,6 @@ title: Cleaner6
 tags:
 ---
 Cleaner: Guess we'll see each other soon.
+<<playSound cat_short_blip_1>>
 
 ===
-

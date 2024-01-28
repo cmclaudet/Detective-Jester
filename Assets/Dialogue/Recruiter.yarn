@@ -2,16 +2,22 @@
 tags:
 ---
 Recruiter: Hey, you must be the new jester! We are soooooo excited to have you here. I'm the chamberlain of this castle. Head of HR if you'd like! Haha.
+<<playSound marius_medium_6>>
 
 Recruiter: I have penciled you in for entertaining our king this evening! He is very easy-going, don't worry. You can joke about absolutely anything!
+<<playSound marius_medium_5>>
 
 Recruiter: Just don’t say anything that could offend him…
+<<playSound marius_medium_2>>
 
-Recruiter: Oh, and for the love of god, please don’t juggle. 
+Recruiter: Oh, and for the love of god, please don’t juggle.
+<<playSound marius_medium_1>>
 
-Recruiter: Anything but juggling! 
+Recruiter: Anything but juggling!
+<<playSound marius_medium_4>>
 
 Recruiter: Do you understand me?
+<<playSound marius_short_what_2>>
 
     -> Yes
         <<jump RecruiterIntro2>>
@@ -23,6 +29,7 @@ title: RecruiterIntro2
 tags:
 ---
 Recruiter: Say it with me: “I won’t juggle”.
+<<playSound marius_medium_4>>
 
 -> I won’t juggle
 <<jump RecruiterIntro3>>
@@ -33,43 +40,47 @@ title: RecruiterIntro3
 tags:
 ---
 Recruiter: Good. Now explore the castle and talk to the rest of our staff while you wait for your turn. I’m sure you’ll make great friends here.
-
+<<playSound marius_long_1>>
 
 ===
 
 
 title: RecruiterIdle1
-tags: 
+tags:
 ---
 Recruiter: So glad to have you on the team.
+<<playSound marius_short_blip_3>>
 
 ===
 
 title: RecruiterIdle2
-tags: 
+tags:
 ---
 Recruiter: Remember: No juggling!
+<<playSound marius_medium_4>>
 
 ===
 
 title: RecruiterIdle3
-tags: 
+tags:
 ---
 Recruiter: You’re going to do great.
-
+<<playSound marius_medium_2>>
 
 ===
 
 title: RecruiterIdle4
-tags: 
+tags:
 ---
 Recruiter: Did you know you have great dental insurance as part of your employment in the castle?
+<<playSound marius_medium_3>>
 
 ===
 
 title: RecruiterIdle5
-tags: 
+tags:
 ---
 Recruiter: Go on then, take your time and breathe in all the exciting opportunities this castle provides.
+<<playSound marius_medium_2>>
 
 ===
