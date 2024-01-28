@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
     public PlayerInput pi;
     public ThirdPersonController tpc;
     [SerializeField] private int lives = 2;
-    private int laughts = 0;
+    [SerializeField] private int laughts = 0;
     [SerializeField] private int dialoguesReadPhase2Threshold;
     [SerializeField] private int uniqueDialoguesReadPhase2Threshold;
     [SerializeField] private StartPhase2DialogueManager startPhase2DialogueManager;
@@ -77,7 +77,11 @@ public class GameManager : MonoBehaviour
             {
                 tpc.MoveSpeed = 0;
                 tpc.SprintSpeed = 0;
-                dr.StartDialogue("LastWords");
+               
+                finale = false;
+
+                dr.Stop();
+                dr.StartDialogue("GoodEnding");
 
             }
         }
@@ -160,7 +164,8 @@ public class GameManager : MonoBehaviour
     private void finalQuestion()
     {
         dr.Stop();
-        dr.StartDialogue("FinalQuestion");
+        dr.StartDialogue("FInalQuestion");
+        ending(true);
     }
     private void ending(bool good)
     {
