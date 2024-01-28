@@ -26,6 +26,7 @@ public class PlayerDialogue : MonoBehaviour {
         dr.onDialogueComplete.AddListener(() => {
                                               ToggleLockCamera(false);
                                               PlayerInput.ActivateInput();
+                                              TryActivateButtonPrompt();
                                           });
 
         dr.AddCommandHandler<int>(
@@ -75,10 +76,11 @@ public class PlayerDialogue : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        ButtonPrompt.SetActive(true);
+        TryActivateButtonPrompt();
         Debug.Log("Enter" +  other.name);
         DialogueManager dialogueManager = other.GetComponent<DialogueManager>();
         if(dialogueManager != null) {
+            Debug.Log("enter dialogue trigger");
             activeDialogueManager = dialogueManager;
             if (dialogueManager.shouldOneTimeTrigger) {
                 StartDialogue();
@@ -94,7 +96,6 @@ public class PlayerDialogue : MonoBehaviour {
         {
             ButtonPrompt.SetActive(false);
             activeDialogueManager = null;
-            dr.Stop();
             PlayerInput.ActivateInput();
         }
     }
@@ -114,8 +115,13 @@ public class PlayerDialogue : MonoBehaviour {
             }
         }
     }
-    
 
+    void TryActivateButtonPrompt() {
+        if (GameManager.isPhase2Started) {
+            return;
+        }
+        ButtonPrompt.SetActive(true);
+    }
 
 
 }

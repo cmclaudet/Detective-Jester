@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour
     
     private readonly List<string> fullyReadDialoguesByName = new ();
     private int totalDialogueInteractionsCount;
+    public bool isPhase2Started;
 
     //Ending Logic
     bool finale = false;
@@ -82,8 +83,8 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void phase2(int x)
-    {
+    public void phase2(int x) {
+        isPhase2Started = true;
         dr.Stop();
         Player.transform.position = JestingPoint.position;
         StartCoroutine(camSlide());
