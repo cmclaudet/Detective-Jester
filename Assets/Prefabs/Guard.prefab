@@ -64,6 +64,9 @@ PrefabInstance:
       addedObject: {fileID: 3966843638297289760}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 307bbf9d24635af40ac7fe61180650a6, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 431889031094826044}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 307bbf9d24635af40ac7fe61180650a6, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 7181778356441659579}
   m_SourcePrefab: {fileID: 100100000, guid: 307bbf9d24635af40ac7fe61180650a6, type: 3}
 --- !u!1 &2179094919532566010 stripped
@@ -119,6 +122,26 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1.04, z: 1.2125452}
   m_Center: {x: 7.323756e-11, y: 1.0700096, z: 0.106274836}
+--- !u!114 &431889031094826044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2179094919532566010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b93d44f0970c47e7976bfb9633070b6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startNodes: []
+  activeStartNodes: []
+  shouldOneTimeTrigger: 0
+  shouldIncrementDialogueInteractions: 0
+  onDialogueStart:
+    m_PersistentCalls:
+      m_Calls: []
+  phase2StartNode: startPhase2
 --- !u!114 &7181778356441659579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -137,7 +160,9 @@ MonoBehaviour:
   - Guard3
   - Guard4
   - Guard5
+  activeStartNodes: []
   shouldOneTimeTrigger: 0
+  shouldIncrementDialogueInteractions: 1
   onDialogueStart:
     m_PersistentCalls:
       m_Calls: []
