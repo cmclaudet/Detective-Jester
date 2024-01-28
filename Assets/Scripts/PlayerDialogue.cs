@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
 using Yarn.Unity;
+using DefaultNamespace;
 
 public class PlayerDialogue : MonoBehaviour {
     public PlayerInput PlayerInput;
@@ -35,6 +36,14 @@ public class PlayerDialogue : MonoBehaviour {
 
     private void ToggleLockCamera(bool value) {
         ThirdPersonController.LockCameraPosition = value;
+        if (value)
+        {
+            PlayerInput.DeactivateInput();
+        }
+        else {
+            PlayerInput.ActivateInput();
+        }
+        
     }
 
     private void addInteraction(int dir)

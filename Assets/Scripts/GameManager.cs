@@ -27,6 +27,11 @@ public class GameManager : MonoBehaviour
     private readonly List<string> fullyReadDialoguesByName = new ();
     private int totalDialogueInteractionsCount;
 
+    //Ending Logic
+    bool finale = false;
+    public float cameraCutoff = -18;
+
+
     private void Awake() {
         dr.AddCommandHandler<int>(
             "loseLife",
@@ -40,6 +45,10 @@ public class GameManager : MonoBehaviour
             "startPhase2",
             phase2
         );
+        dr.AddCommandHandler<bool>(
+            "triggerEnding",
+            ending
+            );
     }
     // Start is called before the first frame update
     void Start()
@@ -50,7 +59,16 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+        if (finale)
+        {
+            if (Player.transform.position.z < cameraCutoff)
+            {
+                tpc.MoveSpeed = 0;
+                tpc.SprintSpeed = 0;
+                dr.StartDialogue("LastWords");
+
+            }
+        }
     }
 
     public void phase2(int x)
@@ -127,6 +145,20 @@ public class GameManager : MonoBehaviour
         dr.Stop();
         dr.StartDialogue("FinalQuestion");
     }
-    
+    private void ending(bool good)
+    {
+        if (good)
+        {
+            tpc.MoveSpeed =  2;
+            tpc.SprintSpeed = 5.3f;
+            pi.ActivateInput();
+            finale = true;
+
+        }
+        else
+        {
+            //Death
+        }
+    }
     
 }
