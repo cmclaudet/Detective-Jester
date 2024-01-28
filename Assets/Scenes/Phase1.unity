@@ -7399,6 +7399,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 462904753073750476}
     - target: {fileID: 2624122706106391651, guid: 0a1276f90da5845748a55d234817dd53, type: 3}
+      propertyPath: lives
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2624122706106391651, guid: 0a1276f90da5845748a55d234817dd53, type: 3}
       propertyPath: Player
       value: 
       objectReference: {fileID: 462904753073750478}
@@ -7410,6 +7414,10 @@ PrefabInstance:
       propertyPath: SoundManager
       value: 
       objectReference: {fileID: 1039974077}
+    - target: {fileID: 2624122706106391651, guid: 0a1276f90da5845748a55d234817dd53, type: 3}
+      propertyPath: cameraCutoff
+      value: 590
+      objectReference: {fileID: 0}
     - target: {fileID: 2624122706106391651, guid: 0a1276f90da5845748a55d234817dd53, type: 3}
       propertyPath: deactivateJesters
       value: 
@@ -7432,7 +7440,7 @@ PrefabInstance:
       objectReference: {fileID: 1781534137}
     - target: {fileID: 2624122706106391651, guid: 0a1276f90da5845748a55d234817dd53, type: 3}
       propertyPath: dialoguesReadPhase2Threshold
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2624122706106391651, guid: 0a1276f90da5845748a55d234817dd53, type: 3}
       propertyPath: uniqueDialoguesReadPhase2Threshold

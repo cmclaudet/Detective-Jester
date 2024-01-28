@@ -78,7 +78,7 @@ public class GameManager : MonoBehaviour
     {
         if (finale)
         {
-            if (Player.transform.position.z < cameraCutoff)
+            if (Player.transform.position.x < cameraCutoff)
             {
                 tpc.MoveSpeed = 0;
                 tpc.SprintSpeed = 0;
@@ -188,7 +188,9 @@ public class GameManager : MonoBehaviour
             Instantiate(boulder, boulderPos, Quaternion.identity);
             dr.Stop();
             dr.StartDialogue("Death");
-            Player.SetActive(false);
+            Player.GetComponent<Collider>().enabled = false;
+            Player.GetComponent<MeshRenderer>().enabled = false;
+
             
             //Death
         }
