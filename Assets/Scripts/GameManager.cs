@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private int uniqueDialoguesReadPhase2Threshold;
     [SerializeField] private StartPhase2DialogueManager startPhase2DialogueManager;
     [SerializeField] private DeactivateJesters deactivateJesters;
-    [SerializeField]
+    [SerializeField] private SoundManager SoundManager;
     
     public List<CinemachineVirtualCamera> cams = new List<CinemachineVirtualCamera>();
     public Transform JestingPoint;
@@ -124,7 +124,7 @@ public class GameManager : MonoBehaviour
 
     public void playSound(string audioId)
     {
-        
+        SoundManager.playSound(audioId);
     }
 
     public void TryAddReadDialogue(string name) {
