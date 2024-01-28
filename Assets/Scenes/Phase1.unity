@@ -32979,6 +32979,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cleaner
       objectReference: {fileID: 0}
+    - target: {fileID: 8135986684603612891, guid: 114a65b2d4a3f5d45a94bda561e79151, type: 3}
+      propertyPath: startNodes.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8135986684603612891, guid: 114a65b2d4a3f5d45a94bda561e79151, type: 3}
+      propertyPath: startNodes.Array.data[5]
+      value: Cleaner6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -34020,6 +34028,18 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: a311047e4bf3f4c889187e0dc6550cc7, type: 2}
+    - target: {fileID: 4052136790274250130, guid: eeae3e02f52654df6aebe28448275e4b, type: 3}
+      propertyPath: startNodes.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4052136790274250130, guid: eeae3e02f52654df6aebe28448275e4b, type: 3}
+      propertyPath: startNodes.Array.data[5]
+      value: Tailor6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4052136790274250130, guid: eeae3e02f52654df6aebe28448275e4b, type: 3}
+      propertyPath: startNodes.Array.data[6]
+      value: Tailor7
+      objectReference: {fileID: 0}
     - target: {fileID: 6958116982161789438, guid: eeae3e02f52654df6aebe28448275e4b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 546.823
