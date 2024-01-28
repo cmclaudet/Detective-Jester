@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4465788, g: 0.49641287, b: 0.5748173, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -19794,6 +19794,26 @@ PrefabInstance:
     - target: {fileID: 3508977716971845879, guid: c93e808936d754af3afb4140be0c9d1f, type: 3}
       propertyPath: m_Constraints
       value: 126
+      objectReference: {fileID: 0}
+    - target: {fileID: 3942402384524006169, guid: c93e808936d754af3afb4140be0c9d1f, type: 3}
+      propertyPath: startNodes.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3942402384524006169, guid: c93e808936d754af3afb4140be0c9d1f, type: 3}
+      propertyPath: startNodes.Array.data[1]
+      value: OtherJester2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3942402384524006169, guid: c93e808936d754af3afb4140be0c9d1f, type: 3}
+      propertyPath: startNodes.Array.data[2]
+      value: OtherJester3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3942402384524006169, guid: c93e808936d754af3afb4140be0c9d1f, type: 3}
+      propertyPath: startNodes.Array.data[3]
+      value: OtherJester4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3942402384524006169, guid: c93e808936d754af3afb4140be0c9d1f, type: 3}
+      propertyPath: startNodes.Array.data[4]
+      value: OtherJester5
       objectReference: {fileID: 0}
     - target: {fileID: 4621292812875624867, guid: c93e808936d754af3afb4140be0c9d1f, type: 3}
       propertyPath: m_LocalPosition.x
