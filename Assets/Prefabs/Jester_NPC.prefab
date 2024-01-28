@@ -52,6 +52,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jester_NPC
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 259d4cc9e63d01f4690ca8155db2aecc, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 259d4cc9e63d01f4690ca8155db2aecc, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7036213049465896255, guid: 259d4cc9e63d01f4690ca8155db2aecc, type: 3}
       propertyPath: m_IsActive
       value: 1
