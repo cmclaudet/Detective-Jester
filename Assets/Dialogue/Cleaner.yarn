@@ -8,7 +8,7 @@ Cleaner: “Keeping the castle clean one body at a time…”
 title: Cleaner2
 tags:
 ---
-Cleaner: The important thing you have to learn is how to step around all the bodies. Don’t worry, you’ll figure it out. It’s not that hard, even the knuckleheads from the Kerven Empire could figure it out.
+Cleaner: The important thing you have to learn is how to step around all the bodies. Don’t worry, you’ll figure it out. It’s not that hard, even the knuckleheads from the Kerven Empire could do it.
 
 ===
 title: Cleaner3
@@ -29,6 +29,18 @@ title: Cleaner5
 tags:
 ---
 Cleaner: So, what are you up to after work? Ah, nevermind…
+
+===
+title: BodyPile
+tags:
+---
+Cleaner: Hah, This one looks just like you.
+
+===
+title: DeadJester
+tags:
+---
+Cleaner: Don’t worry, that’s probably not the real prince. Just another masked fool…
 
 ===
 
