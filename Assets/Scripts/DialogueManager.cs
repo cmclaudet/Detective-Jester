@@ -15,8 +15,8 @@ public class DialogueManager : MonoBehaviour
     public bool shouldIncrementDialogueInteractions = true;
     public UnityEvent onDialogueStart;
 
-    public int startNodeIndex { get; private set; }
-    public bool isSeen { get; private set; }
+    public int startNodeIndex { get; protected set; }
+    public bool isSeen { get; protected set; }
 
     private void Awake() {
         SetStartNodes();
@@ -27,7 +27,7 @@ public class DialogueManager : MonoBehaviour
     }
 
     public void IncrementNodeIndex() {
-        if (startNodeIndex >= startNodes.Length - 1) {
+        if (startNodeIndex >= activeStartNodes.Length - 1) {
             startNodeIndex = 0;
             isSeen = true;
         } else {

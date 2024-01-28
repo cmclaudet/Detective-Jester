@@ -6965,11 +6965,11 @@ PrefabInstance:
     - target: {fileID: 2624122706106391651, guid: 0a1276f90da5845748a55d234817dd53, type: 3}
       propertyPath: cams.Array.data[1]
       value: 
-      objectReference: {fileID: 1162657494}
+      objectReference: {fileID: 2020580181}
     - target: {fileID: 2624122706106391651, guid: 0a1276f90da5845748a55d234817dd53, type: 3}
       propertyPath: cams.Array.data[2]
       value: 
-      objectReference: {fileID: 2020580181}
+      objectReference: {fileID: 1162657494}
     - target: {fileID: 2624122706106391651, guid: 0a1276f90da5845748a55d234817dd53, type: 3}
       propertyPath: startPhase2DialogueManager
       value: 
@@ -6980,7 +6980,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2624122706106391651, guid: 0a1276f90da5845748a55d234817dd53, type: 3}
       propertyPath: uniqueDialoguesReadPhase2Threshold
-      value: 8
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5481031659552119980, guid: 0a1276f90da5845748a55d234817dd53, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12979,7 +12979,6 @@ MonoBehaviour:
   - {fileID: 803494172}
   - {fileID: 1448930489}
   - {fileID: 1013808422}
-  - {fileID: 1120206003}
 --- !u!4 &882271719
 Transform:
   m_ObjectHideFlags: 0
@@ -17713,11 +17712,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a21e1b55904cf9a4583fe2454c4620cb, type: 3}
---- !u!1 &1120206003 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8036488489375896769, guid: a21e1b55904cf9a4583fe2454c4620cb, type: 3}
-  m_PrefabInstance: {fileID: 1120206002}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1132925290 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c75774fef878977468dd100c3d62c56e, type: 3}
