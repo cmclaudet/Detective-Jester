@@ -2,10 +2,10 @@
 tags:
 ---
 Guard: I am the head of the royal guard. You may address me as Sir, or not address me at all.
-Guard: Behind me is the throne room of our glorious king.
-Guard: His majesty is a great leader, and a man of impeccable taste.
-Guard: Our lady queen is the most beautiful woman in the entire kingdom.
-Guard: I can't believe that one of your colleagues here tried to make a joke about her nose. Of course, he got the axe.
+Guard: Behind me is the throne room of our glorious king. It's even more beautiful in there than in the Duckingham Palace.
+Guard: His majesty is a great leader, and a man of impeckable taste.
+Guard: Our lady queen is the most beautiful woman in the entire kingdom, she has such a pheasant voice.
+Guard: I can't believe that one of your colleagues here tried to make a joke about her nose. That's so cheep. Of course, he got the axe.
 Guard: I am on duty here. Why don't you bother somebody else now.
 
 ===
@@ -13,14 +13,17 @@ Guard: I am on duty here. Why don't you bother somebody else now.
 title: GuardBeforeClues
 tags:
 ---
-Guard: It’s not your turn yet.
+Guard: It’s not your turn yet. Go find someone else to quack up.
 ===
 
 title: GuardAfterClues
 tags:
 ---
-Guard: It is your turn, jester. The king awaits. Godspeed.
-    -> Yes! I'm ready.
+Guard: It is your turn, comedi-hen. The king awaits. You're sure you're ready for this?
+Guard: We don't have any more jesters lined up for today, so make sure you know what not to say and don't just wing it.
+Guard: It's owl or nothing. There will be no nest time.
+
+    -> I'm ready.
         <<startPhase2 1>>
     -> Actually let me gather more info...
 ===
