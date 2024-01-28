@@ -131,7 +131,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ac4de62785a37245aacf7f79f6579fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startNodes: []
+  startNodes:
+  - OtherJester
   activeStartNodes: []
   shouldOneTimeTrigger: 0
   shouldIncrementDialogueInteractions: 0
