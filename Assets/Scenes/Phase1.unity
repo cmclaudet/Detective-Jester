@@ -3775,6 +3775,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1855230227}
     m_Modifications:
+    - target: {fileID: 423685782637686724, guid: 0cadd25c01a511d43b0df1774ad04dfd, type: 3}
+      propertyPath: m_Size.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 423685782637686724, guid: 0cadd25c01a511d43b0df1774ad04dfd, type: 3}
+      propertyPath: m_Center.y
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2418550970111013300, guid: 0cadd25c01a511d43b0df1774ad04dfd, type: 3}
       propertyPath: m_Name
       value: WallCastle (87)
@@ -17348,6 +17356,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1855230227}
     m_Modifications:
+    - target: {fileID: 423685782637686724, guid: 0cadd25c01a511d43b0df1774ad04dfd, type: 3}
+      propertyPath: m_Size.y
+      value: 4.0000005
+      objectReference: {fileID: 0}
+    - target: {fileID: 423685782637686724, guid: 0cadd25c01a511d43b0df1774ad04dfd, type: 3}
+      propertyPath: m_Center.y
+      value: 1.9999983
+      objectReference: {fileID: 0}
     - target: {fileID: 2418550970111013300, guid: 0cadd25c01a511d43b0df1774ad04dfd, type: 3}
       propertyPath: m_Name
       value: WallCastle (80)
@@ -23277,6 +23293,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1855230227}
     m_Modifications:
+    - target: {fileID: 423685782637686724, guid: 0cadd25c01a511d43b0df1774ad04dfd, type: 3}
+      propertyPath: m_Size.y
+      value: 4.000002
+      objectReference: {fileID: 0}
+    - target: {fileID: 423685782637686724, guid: 0cadd25c01a511d43b0df1774ad04dfd, type: 3}
+      propertyPath: m_Center.y
+      value: 1.9999982
+      objectReference: {fileID: 0}
     - target: {fileID: 2418550970111013300, guid: 0cadd25c01a511d43b0df1774ad04dfd, type: 3}
       propertyPath: m_Name
       value: WallCastle (123)
@@ -31586,6 +31610,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1855230227}
     m_Modifications:
+    - target: {fileID: 423685782637686724, guid: 0cadd25c01a511d43b0df1774ad04dfd, type: 3}
+      propertyPath: m_Size.y
+      value: 4.000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 423685782637686724, guid: 0cadd25c01a511d43b0df1774ad04dfd, type: 3}
+      propertyPath: m_Center.y
+      value: 1.9999989
+      objectReference: {fileID: 0}
     - target: {fileID: 2418550970111013300, guid: 0cadd25c01a511d43b0df1774ad04dfd, type: 3}
       propertyPath: m_Name
       value: WallCastle (85)
@@ -31991,6 +32023,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1855230227}
     m_Modifications:
+    - target: {fileID: 423685782637686724, guid: 0cadd25c01a511d43b0df1774ad04dfd, type: 3}
+      propertyPath: m_Size.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 423685782637686724, guid: 0cadd25c01a511d43b0df1774ad04dfd, type: 3}
+      propertyPath: m_Center.y
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2418550970111013300, guid: 0cadd25c01a511d43b0df1774ad04dfd, type: 3}
       propertyPath: m_Name
       value: WallCastle (88)
