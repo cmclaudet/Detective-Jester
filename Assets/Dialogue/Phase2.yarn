@@ -99,8 +99,8 @@ King: What else do you have? Entertain me!
     -> Calling your uncle stupid would be an insult to stupid people.
          <<playSound king_angry2>>
          King: Your mom really should have taught you some manners.
-        <<loseLife 1>>
-        <<jump Question4>>
+         <<loseLife 1>>
+         <<jump Question4>>
     -> I always take life with a grain of salt. And a slice of lemon. And a shot of tequila.
         <<playSound king_thinking1>>
         King: That doesn’t sound healthy.
