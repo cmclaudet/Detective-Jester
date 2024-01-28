@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13e085e32b6924dbba9afd59dd0d3714, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: Phase1
+  sceneName: Title
   anim: {fileID: 1679126962}
 --- !u!4 &111483152
 Transform:
@@ -793,7 +793,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You Survived!
+  m_text: You Died!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: affe69160cb3549e3a56d088e6abb80a, type: 2}
   m_sharedMaterial: {fileID: -1655285346721262448, guid: affe69160cb3549e3a56d088e6abb80a, type: 2}
