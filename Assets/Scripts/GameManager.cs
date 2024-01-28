@@ -51,6 +51,10 @@ public class GameManager : MonoBehaviour
             "triggerEnding",
             ending
             );
+        dr.AddCommandHandler<bool>(
+            "allowMovement",
+            allowMovement
+            );
     }
     // Start is called before the first frame update
     void Start()
@@ -167,6 +171,13 @@ public class GameManager : MonoBehaviour
             
             //Death
         }
+    }
+
+    public void allowMovement(bool b)
+    {
+        pi.ActivateInput();
+        tpc.MoveSpeed = 2;
+        tpc.SprintSpeed = 5.3f;
     }
     
 }
