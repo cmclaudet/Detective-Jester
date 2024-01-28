@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private int uniqueDialoguesReadPhase2Threshold;
     [SerializeField] private StartPhase2DialogueManager startPhase2DialogueManager;
     [SerializeField] private DeactivateJesters deactivateJesters;
+    [SerializeField]
     
     public List<CinemachineVirtualCamera> cams = new List<CinemachineVirtualCamera>();
     public Transform JestingPoint;
@@ -54,6 +55,10 @@ public class GameManager : MonoBehaviour
         dr.AddCommandHandler<bool>(
             "allowMovement",
             allowMovement
+            );
+        dr.AddCommandHandler<string>(
+            "playSound",
+            playSound
             );
     }
     // Start is called before the first frame update
@@ -115,6 +120,11 @@ public class GameManager : MonoBehaviour
         {
             finalQuestion();
         }
+    }
+
+    public void playSound(string audioId)
+    {
+        
     }
 
     public void TryAddReadDialogue(string name) {
