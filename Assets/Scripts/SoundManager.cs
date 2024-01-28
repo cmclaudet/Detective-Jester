@@ -11,7 +11,7 @@ public class SoundClips
 }
 public class SoundManager : MonoBehaviour
 {
-    public List<SoundClips> Clips = new List<SoundClips>();
+    public List<AudioClip> Clips = new List<AudioClip>();
 
     private AudioSource audio;
     // Start is called before the first frame update
@@ -28,8 +28,8 @@ public class SoundManager : MonoBehaviour
 
     public void playSound(string clipName)
     {
-        SoundClips sc = Clips.Find((x) => x.name == clipName);
-        audio.clip = sc.audio;
+        AudioClip sc = Clips.Find((x) => x.name == clipName);
+        audio.clip = sc;
         audio.Play();
     }
 
