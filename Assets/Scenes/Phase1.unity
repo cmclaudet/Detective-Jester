@@ -11691,6 +11691,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 882271719}
     m_Modifications:
+    - target: {fileID: 1639888060541414361, guid: c93e808936d754af3afb4140be0c9d1f, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: 40a739687e148f64c8178be45f6f3016, type: 2}
+    - target: {fileID: 1639888060541414361, guid: c93e808936d754af3afb4140be0c9d1f, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: a311047e4bf3f4c889187e0dc6550cc7, type: 2}
     - target: {fileID: 3508977716971845879, guid: c93e808936d754af3afb4140be0c9d1f, type: 3}
       propertyPath: m_Constraints
       value: 126
@@ -13760,6 +13768,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 882271719}
     m_Modifications:
+    - target: {fileID: 1639888060541414361, guid: c93e808936d754af3afb4140be0c9d1f, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: 40a739687e148f64c8178be45f6f3016, type: 2}
+    - target: {fileID: 1639888060541414361, guid: c93e808936d754af3afb4140be0c9d1f, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: a311047e4bf3f4c889187e0dc6550cc7, type: 2}
     - target: {fileID: 3508977716971845879, guid: c93e808936d754af3afb4140be0c9d1f, type: 3}
       propertyPath: m_Constraints
       value: 126
@@ -14992,6 +15008,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 882271719}
     m_Modifications:
+    - target: {fileID: 1639888060541414361, guid: c93e808936d754af3afb4140be0c9d1f, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: 40a739687e148f64c8178be45f6f3016, type: 2}
+    - target: {fileID: 1639888060541414361, guid: c93e808936d754af3afb4140be0c9d1f, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: a311047e4bf3f4c889187e0dc6550cc7, type: 2}
     - target: {fileID: 3508977716971845879, guid: c93e808936d754af3afb4140be0c9d1f, type: 3}
       propertyPath: m_Constraints
       value: 126
@@ -19791,6 +19815,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 884549466}
     m_Modifications:
+    - target: {fileID: 1639888060541414361, guid: c93e808936d754af3afb4140be0c9d1f, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: 40a739687e148f64c8178be45f6f3016, type: 2}
+    - target: {fileID: 1639888060541414361, guid: c93e808936d754af3afb4140be0c9d1f, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: a311047e4bf3f4c889187e0dc6550cc7, type: 2}
     - target: {fileID: 3508977716971845879, guid: c93e808936d754af3afb4140be0c9d1f, type: 3}
       propertyPath: m_Constraints
       value: 126
@@ -21806,6 +21838,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 882271719}
     m_Modifications:
+    - target: {fileID: 1639888060541414361, guid: c93e808936d754af3afb4140be0c9d1f, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: 40a739687e148f64c8178be45f6f3016, type: 2}
+    - target: {fileID: 1639888060541414361, guid: c93e808936d754af3afb4140be0c9d1f, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: a311047e4bf3f4c889187e0dc6550cc7, type: 2}
     - target: {fileID: 3508977716971845879, guid: c93e808936d754af3afb4140be0c9d1f, type: 3}
       propertyPath: m_Constraints
       value: 126
@@ -27217,6 +27257,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 882271719}
     m_Modifications:
+    - target: {fileID: 1639888060541414361, guid: c93e808936d754af3afb4140be0c9d1f, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: 40a739687e148f64c8178be45f6f3016, type: 2}
+    - target: {fileID: 1639888060541414361, guid: c93e808936d754af3afb4140be0c9d1f, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: a311047e4bf3f4c889187e0dc6550cc7, type: 2}
     - target: {fileID: 3508977716971845879, guid: c93e808936d754af3afb4140be0c9d1f, type: 3}
       propertyPath: m_Constraints
       value: 126
