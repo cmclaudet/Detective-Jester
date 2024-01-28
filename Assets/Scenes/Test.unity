@@ -2858,6 +2858,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7946040310518784767, guid: f02a338373aaf4f66a2221f8ac182c63, type: 3}
+      propertyPath: startNode
+      value: FinalQuestion
+      objectReference: {fileID: 0}
+    - target: {fileID: 7946040310518784767, guid: f02a338373aaf4f66a2221f8ac182c63, type: 3}
+      propertyPath: startAutomatically
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8239980265972764464, guid: f02a338373aaf4f66a2221f8ac182c63, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -6950,6 +6958,10 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 462904753073750478}
+    - target: {fileID: 2624122706106391651, guid: 0a1276f90da5845748a55d234817dd53, type: 3}
+      propertyPath: laughts
+      value: 10000
+      objectReference: {fileID: 0}
     - target: {fileID: 2624122706106391651, guid: 0a1276f90da5845748a55d234817dd53, type: 3}
       propertyPath: JestingPoint
       value: 
