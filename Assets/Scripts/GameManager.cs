@@ -30,6 +30,8 @@ public class GameManager : MonoBehaviour
     //Ending Logic
     bool finale = false;
     public float cameraCutoff = -18;
+    public GameObject boulder;
+    public float boulderYOffset = 4;
 
 
     private void Awake() {
@@ -157,6 +159,11 @@ public class GameManager : MonoBehaviour
         }
         else
         {
+            Vector3 boulderPos = new Vector3(JestingPoint.position.x, JestingPoint.position.y + boulderYOffset, JestingPoint.position.z);
+            Instantiate(boulder, boulderPos, Quaternion.identity);
+            dr.Stop();
+            dr.StartDialogue("Death");
+            
             //Death
         }
     }
