@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4465788, g: 0.49641287, b: 0.5748173, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3153,6 +3153,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8239980267621442368, guid: f02a338373aaf4f66a2221f8ac182c63, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8239980267621442371, guid: f02a338373aaf4f66a2221f8ac182c63, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
@@ -4823,6 +4827,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 6954907217961002835, guid: 7154c4ef33fd58e4d969ac0d382f21ef, type: 3}
   m_PrefabInstance: {fileID: 82381593}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &297585963 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8239980267621442368, guid: f02a338373aaf4f66a2221f8ac182c63, type: 3}
+  m_PrefabInstance: {fileID: 179380687}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &299808481
 GameObject:
@@ -7439,12 +7448,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1162657494}
     - target: {fileID: 2624122706106391651, guid: 0a1276f90da5845748a55d234817dd53, type: 3}
+      propertyPath: optionDialogueRunner
+      value: 
+      objectReference: {fileID: 297585963}
+    - target: {fileID: 2624122706106391651, guid: 0a1276f90da5845748a55d234817dd53, type: 3}
       propertyPath: startPhase2DialogueManager
       value: 
       objectReference: {fileID: 1781534137}
     - target: {fileID: 2624122706106391651, guid: 0a1276f90da5845748a55d234817dd53, type: 3}
       propertyPath: dialoguesReadPhase2Threshold
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2624122706106391651, guid: 0a1276f90da5845748a55d234817dd53, type: 3}
       propertyPath: uniqueDialoguesReadPhase2Threshold
@@ -17489,6 +17502,10 @@ PrefabInstance:
     - target: {fileID: 6166450384016415335, guid: 14b86eb1cff23ea4cab4c39119668cfc, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8388062545476928313, guid: 14b86eb1cff23ea4cab4c39119668cfc, type: 3}
+      propertyPath: Clips.Array.size
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

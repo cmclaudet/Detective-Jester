@@ -34,6 +34,7 @@ public class GameManager : MonoBehaviour
     public float cameraCutoff = -18;
     public GameObject boulder;
     public float boulderYOffset = 4;
+    public GameObject optionDialogueRunner;
 
 
     private void Awake() {
@@ -85,6 +86,7 @@ public class GameManager : MonoBehaviour
                 finale = false;
 
                 dr.Stop();
+                optionDialogueRunner.SetActive(false);
                 dr.StartDialogue("GoodEnding");
 
             }

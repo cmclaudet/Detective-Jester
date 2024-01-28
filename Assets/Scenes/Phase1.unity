@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4465788, g: 0.49641287, b: 0.5748173, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3220,6 +3220,11 @@ MonoBehaviour:
 --- !u!1 &179380689 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8145348579004412658, guid: f02a338373aaf4f66a2221f8ac182c63, type: 3}
+  m_PrefabInstance: {fileID: 179380687}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &179380690 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8239980267621442368, guid: f02a338373aaf4f66a2221f8ac182c63, type: 3}
   m_PrefabInstance: {fileID: 179380687}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &181378944
@@ -7438,6 +7443,10 @@ PrefabInstance:
       propertyPath: cams.Array.data[2]
       value: 
       objectReference: {fileID: 1162657494}
+    - target: {fileID: 2624122706106391651, guid: 0a1276f90da5845748a55d234817dd53, type: 3}
+      propertyPath: optionDialogueRunner
+      value: 
+      objectReference: {fileID: 179380690}
     - target: {fileID: 2624122706106391651, guid: 0a1276f90da5845748a55d234817dd53, type: 3}
       propertyPath: startPhase2DialogueManager
       value: 
