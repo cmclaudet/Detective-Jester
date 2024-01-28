@@ -33,10 +33,13 @@ title: GuardAfterClues
 tags:
 ---
 <<playSound tamas_long_1>>
-Guard: It is your turn, comedi-hen. The king awaits. You're sure you're ready for this?
+Guard: It is your turn, comedi-hen. The king awaits. You're sure you're ready for this? 
 
 <<playSound tamas_medium_2>>
 Guard: We don't have any more jesters lined up for today, just this annoying lying one back there... 
+
+<<playSound tamas_medium_3>>
+Guard: All the others weren't a hoot. The king had no other choice than to 'let them fly'.
 
 <<playSound tamas_medium_1>>
 Guard: So make sure you know what not to say and don't just wing it. It's owl or nothing. There will be no nest time.
