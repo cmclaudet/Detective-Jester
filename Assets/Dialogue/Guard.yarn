@@ -1,41 +1,46 @@
 ﻿title: Guard
 tags:
 ---
-Guard: I am the head of the royal guard. You may address me as Sir, or not address me at all.
 <<playSound tamas_long2>>
+Guard: I am the head of the royal guard. You may address me as Sir, or not address me at all.
 
-Guard: Behind me is the throne room of our glorious king. It's even more beautiful in there than in the Duckingham Palace.
 <<playSound tamas_medium_1>>
+Guard: Behind me is the throne room of our glorious king. It's even more beautiful in there than in the Duckingham Palace.
 
-Guard: His majesty is a great leader, and a man of impeckable taste.
 <<playSound tamas_medium_2>>
+Guard: His majesty is a great leader, and a man of impeckable taste.
 
-Guard: Our lady queen is the most beautiful woman in the entire kingdom, she has such a pheasant voice.
 <<playSound tamas_medium_3>>
+Guard: Our lady queen is the most beautiful woman in the entire kingdom, she has such a pheasant voice.
 
-Guard: I can't believe that one of your colleagues here tried to make a joke about her nose. That's so cheep. Of course, he got the axe.
 <<playSound tamas_hmm_2>>
-Guard: I am on duty here. Why don't you bother somebody else now.
+Guard: I can't believe that one of your colleagues here tried to make a joke about her nose. That's so cheep. Of course, he got the axe.
+
 <<playSound tamas_what_1>>
+Guard: I am on duty here. Why don't you bother somebody else now.
 
 ===
 
 title: GuardBeforeClues
 tags:
 ---
-Guard: It’s not your turn yet. Go find someone else to quack up.
 <<playSound tamas_short_blip_2>>  
+Guard: It’s not your turn yet. Go find someone else to quack up.
+
 ===
 
 title: GuardAfterClues
 tags:
 ---
-Guard: It is your turn, comedi-hen. The king awaits. You're sure you're ready for this?
 <<playSound tamas_long1>>
-Guard: We don't have any more jesters lined up for today, so make sure you know what not to say and don't just wing it.
+Guard: It is your turn, comedi-hen. The king awaits. You're sure you're ready for this?
+
 <<playSound tamas_medium_2>>
-Guard: It's owl or nothing. There will be no nest time.
+Guard: We don't have any more jesters lined up for today, just this annoying lying one back there... 
+
 <<playSound tamas_medium_1>>
+Guard: So make sure you know what not to say and don't just wing it. It's owl or nothing. There will be no nest time.
+
     -> I'm ready.
         <<startPhase2 1>>
     -> Actually let me gather more info...

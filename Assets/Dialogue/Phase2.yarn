@@ -6,8 +6,9 @@ The Kings Guard: Can't you see it's not your turn yet? Get back in line!
 title:startPhase2
 tags:
 ---
+<<playSound tamas_short_blip_2>>  
 The Kings Guard: Are you ready to start the show? There is no going back!
-<<playSound tamas_short_blip_2>>   
+ 
     -> Yes! I'm ready.
         <<startPhase2 1>>
     -> Actually let me gather more info...
@@ -18,22 +19,22 @@ The Kings Guard: Are you ready to start the show? There is no going back!
 title:Question1
 tags:
 ---
-King: Make me laugh!
 <<playSound king_thinking2>>
+King: Make me laugh!
 
     -> Knock knock…
-        King: Oh no, you’re one of those… Can we skip this joke?
         <<playSound king_groaning2>>
+        King: Oh no, you’re one of those… Can we skip this joke?
         <<loseLife 1>>
         <<jump Question2B>>
     -> Two Kervens walk into a bar…
-        King: That’s offensive!
         <<playSound king_angry3>>
+        King: That’s offensive!
         <<loseLife 1>>
         <<jump Question2B>>
     -> Yo momma is so fat…
-        King: Hm. Go on…
         <<playSound king_thinking2>>
+        King: Hm. Go on…
         <<getLaugh 1>> 
         <<jump Question2A>>
 
@@ -44,18 +45,18 @@ tags:
 ---
 
 -> …that she makes your wife look thin!
+    <<playSound king_angry3>>    
     King: How dare you?
-    <<playSound king_angry3>>
     <<loseLife 1>>
     <<jump Question3>>
 -> …that she wakes up on both sides of the bed!
-    King: Well, I guess that’s true...
     <<playSound king_agreeing>>
+    King: Well, I guess that’s true...
     <<getLaugh 1>> 
     <<jump Question3>>
 -> …like a blue whale!
+    <<playSound king_mocking>>    
     King: What are you talking about? There are no blue whales! Are you mocking me?
-    <<playSound king_mocking>>
     <<loseLife 1>>
     <<jump Question3>>
 
@@ -68,18 +69,18 @@ tags:
 King: I thought you'd be funny...
 <<playSound king_bored2>> 
     -> I might not be that funny, but I’m still funnier than I look!
-        King: You don’t seem to put a lot of value on yourself.
         <<playSound king_disappointed1>> 
+        King: You don’t seem to put a lot of value on yourself.
         <<loseLife 1>>
         <<jump Question3>>
     -> And I assumed I'd be the only jester around here. I’m green with envy, seeing the crowd outside…
-        King: What are you talking about? You make no sense. Are you mocking me?
         <<playSound king_mocking>>
+        King: What are you talking about? You make no sense. Are you mocking me?
         <<loseLife 1>>
         <<jump Question3>>
     -> You seem to have a great sense of humor yourself. I assume these jesters around us died from laughter?
-        King: No, I don’t think that was the reason? Do you have a point to make?
         <<playSound king_confused1>>
+        King: No, I don’t think that was the reason? Do you have a point to make?
         <<getLaugh 1>> 
         <<jump Question3>>
 
@@ -91,18 +92,18 @@ tags:
 King: What else do you have? Entertain me!
 <<playSound king_thinking2>>
     -> I failed math class so many times, I can’t even count.
-        King: Was that a pun? I hate puns!
         <<playSound king_angry2>>
+        King: Was that a pun? I hate puns!
         <<loseLife 1>>
         <<jump Question4>>
     -> Calling your uncle stupid would be an insult to stupid people.
-        King: Your mom really should have taught you some manners.
          <<playSound king_angry2>>
+         King: Your mom really should have taught you some manners.
         <<loseLife 1>>
         <<jump Question4>>
     -> I always take life with a grain of salt. And a slice of lemon. And a shot of tequila.
-        King: That doesn’t sound healthy.
         <<playSound king_thinking1>>
+        King: That doesn’t sound healthy.
         <<getLaugh 1>> 
         <<jump Question4>>
 
@@ -114,18 +115,18 @@ tags:
 
 Jester: How often do the people of the Orkovan kingdom shower? 
     -> Once in a red moon
-        King: That might be true… They have strange customs over there.
         <<playSound king_thinking2>>
+        King: That might be true… They have strange customs over there.
         <<getLaugh 1>> 
         <<jump Question5>>
     -> Once in a green moon
-        King: That’s not how the saying goes… You’re mocking me, aren’t you?
         <<playSound king_mocking>>
+        King: That’s not how the saying goes… You’re mocking me, aren’t you?
         <<loseLife 1>>
         <<jump Question5>>
     -> Once in a blue moon
-        King: That’s not how the saying goes… You’re mocking me, aren’t you? 
         <<playSound king_mocking>>
+        King: That’s not how the saying goes… You’re mocking me, aren’t you? 
         <<loseLife 1>>
         <<jump Question5>>
 
@@ -135,12 +136,12 @@ title:Question5
 tags:
 ---
     -> You seem to be pretty frustrated. Could I make a suggJESTion to cheer you up?
-        King: A pun? I hate puns!
         <<playSound king_angry2>>
+        King: A pun? I hate puns!
         <<loseLife 1>>
     -> Did you see the king of Kerven? He has less wits than a bowl of rice!
-        King: That would have to be a very eloquent bowl of rice. I love that man.
         <<playSound king_angry2>>
+        King: That would have to be a very eloquent bowl of rice. I love that man.
         <<loseLife 1>>
     -> Out of all the kingdoms in this land, this is certainly one of them.
         <<getLaugh 1>> 

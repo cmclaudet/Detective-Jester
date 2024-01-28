@@ -1,8 +1,8 @@
 ﻿title: BadEnding
 tags:
 ---
-King: I've had enough of this. Goodbye, jester.
 <<playSound king_angry1>>
+King: I've had enough of this. Goodbye, jester.
 <<triggerEnding false>>
 ===
 

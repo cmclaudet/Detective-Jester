@@ -1,11 +1,11 @@
 ﻿title: Death
 tags:
 ---
-King: Ha...
 <<playSound king_laughing1>>
-King: Ha ha ha...
+King: Ha...
 <<playSound king_laughing2>>
-King: Send in the next one!
+King: Ha ha ha...
 <<playSound king_angry3>>
+King: Send in the next one!
 <<switchScene loseScreen>>
 ===

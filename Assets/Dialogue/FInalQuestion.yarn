@@ -1,9 +1,8 @@
 ﻿title: FInalQuestion
 tags:
 ---
-
-King: You tire me, jester. But you’re not offensive either… I know what to do. I command you to… JUGGLE for me!
 <<playSound king_groaning>>
+King: You tire me, jester. But you’re not offensive either… I know what to do. I command you to… JUGGLE for me!
     <<allowMovement true>>
     -> Start juggling slowly
         *I think this might be a bad idea*
@@ -19,8 +18,8 @@ King: You tire me, jester. But you’re not offensive either… I know what to d
 title: Phase2_1
 tags:
 ---
-King: What are you waiting for?
 <<playSound king_bored>>
+King: What are you waiting for?
     <<allowMovement true>>
     -> Start juggling slowly
         *I think this might be a bad idea*
@@ -36,9 +35,8 @@ King: What are you waiting for?
 title: Phase2_2
 tags:
 ---
-
-King: Juggle for me, jester!
 <<playSound king_bored2>>
+King: Juggle for me, jester!
     <<allowMovement true>>  
     -> Start juggling slowly
         *I think this might be a bad idea*
