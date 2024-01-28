@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 931aa2bbc02d7ec40bd0e55fe03f5a5b
+guid: 0985770373789594bba96bf7c01d12e3
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: M_Gold
-    second: {fileID: 2100000, guid: 1e514a30fa811db4b816370eb1e474b6, type: 2}
+      name: Leaf
+    second: {fileID: 2100000, guid: 1ed107c35af26d948a3faa0805624099, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
