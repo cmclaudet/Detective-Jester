@@ -8,11 +8,9 @@ King: You tire me, jester. But you’re not offensive either… I know what to d
     -> Start juggling slowly
         *I think this might be a bad idea*
         <<jump Phase2_1>>
-
     -> Start juggling enthusiastically
         *I think I should try something else*
         <<jump Phase2_1>>
-
     -> Start juggling while dancing
         *I have a feeling the king wouldn't like that*
         <<jump Phase2_1>>
@@ -21,18 +19,15 @@ King: You tire me, jester. But you’re not offensive either… I know what to d
 title: Phase2_1
 tags:
 ---
-
 King: What are you waiting for?
 <<playSound king_bored>>
     <<allowMovement true>>
     -> Start juggling slowly
         *I think this might be a bad idea*
         <<jump Phase2_2>>
-
     -> Start juggling enthusiastically
         *I think I should try something else*
         <<jump Phase2_2>>
-
     -> Start juggling while dancing
         *I have a feeling the king wouldn't like that*
         <<jump Phase2_2>>
@@ -45,15 +40,12 @@ tags:
 King: Juggle for me, jester!
 <<playSound king_bored2>>
     <<allowMovement true>>  
-
     -> Start juggling slowly
         *I think this might be a bad idea*
         <<jump Phase2_1>>
-
     -> Start juggling enthusiastically
         *I think I should try something else*
         <<jump Phase2_1>>
-
     -> Start juggling while dancing
         *I have a feeling the king wouldn't like that*
         <<jump Phase2_1>>

@@ -17,7 +17,6 @@ public class GameManager : MonoBehaviour
     [SerializeField] private int lives = 2;
     [SerializeField] private int laughts = 0;
     [SerializeField] private int dialoguesReadPhase2Threshold;
-    [SerializeField] private int uniqueDialoguesReadPhase2Threshold;
     [SerializeField] private StartPhase2DialogueManager startPhase2DialogueManager;
     [SerializeField] private DeactivateJesters deactivateJesters;
     [SerializeField] private SoundManager SoundManager;
@@ -35,6 +34,7 @@ public class GameManager : MonoBehaviour
     public float cameraCutoff = -18;
     public GameObject boulder;
     public float boulderYOffset = 4;
+    public GameObject optionDialogueRunner;
 
 
     private void Awake() {
@@ -86,6 +86,7 @@ public class GameManager : MonoBehaviour
                 finale = false;
 
                 dr.Stop();
+                optionDialogueRunner.SetActive(false);
                 dr.StartDialogue("GoodEnding");
 
             }
@@ -126,7 +127,7 @@ public class GameManager : MonoBehaviour
     public void getLaugh(int x)
     {
         laughts += x;
-        if(laughts >= 4)
+        if(laughts >= 3)
         {
             finalQuestion();
         }
@@ -149,12 +150,12 @@ public class GameManager : MonoBehaviour
 
     public void IncrementDialogueInteractions() {
         totalDialogueInteractionsCount++;
+        Debug.Log($"total interactions: {totalDialogueInteractionsCount}");
         CheckPhase2Unlock();
     }
 
     private void CheckPhase2Unlock() {
-        if (totalDialogueInteractionsCount >= dialoguesReadPhase2Threshold ||
-            fullyReadDialoguesByName.Count >= (uniqueDialoguesReadPhase2Threshold)) {
+        if (totalDialogueInteractionsCount >= dialoguesReadPhase2Threshold) {
             startPhase2DialogueManager.ActivatePhase2StartNode();
             deactivateJesters.DeactivateAllJesters();
         }

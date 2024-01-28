@@ -25,13 +25,11 @@ King: Make me laugh!
         <<playSound king_groaning2>>
         <<loseLife 1>>
         <<jump Question2B>>
-
     -> Two Kervens walk into a bar…
         King: That’s offensive!
         <<playSound king_angry3>>
         <<loseLife 1>>
         <<jump Question2B>>
-
     -> Yo momma is so fat…
         King: Hm. Go on…
         <<playSound king_thinking2>>
@@ -49,13 +47,11 @@ tags:
     <<playSound king_angry3>>
     <<loseLife 1>>
     <<jump Question3>>
-
 -> …that she wakes up on both sides of the bed!
     King: Well, I guess that’s true...
     <<playSound king_agreeing>>
     <<getLaugh 1>> 
     <<jump Question3>>
-
 -> …like a blue whale!
     King: What are you talking about? There are no blue whales! Are you mocking me?
     <<playSound king_mocking>>
@@ -70,20 +66,16 @@ tags:
 
 King: I thought you'd be funny...
 <<playSound king_bored2>> 
-
-
     -> I might not be that funny, but I’m still funnier than I look!
         King: You don’t seem to put a lot of value on yourself.
         <<playSound king_disappointed1>> 
         <<loseLife 1>>
         <<jump Question3>>
-
     -> And I assumed I'd be the only jester around here. I’m green with envy, seeing the crowd outside…
         King: What are you talking about? You make no sense. Are you mocking me?
         <<playSound king_mocking>>
         <<loseLife 1>>
         <<jump Question3>>
-
     -> You seem to have a great sense of humor yourself. I assume these jesters around us died from laughter?
         King: No, I don’t think that was the reason? Do you have a point to make?
         <<playSound king_confused1>>
@@ -102,13 +94,11 @@ King: What else do you have? Entertain me!
         <<playSound king_angry2>>
         <<loseLife 1>>
         <<jump Question4>>
-
     -> Calling your uncle stupid would be an insult to stupid people.
         King: Your mom really should have taught you some manners.
          <<playSound king_angry2>>
         <<loseLife 1>>
         <<jump Question4>>
-
     -> I always take life with a grain of salt. And a slice of lemon. And a shot of tequila.
         King: That doesn’t sound healthy.
         <<playSound king_thinking1>>
@@ -127,13 +117,11 @@ Jester: How often do the people of the Orkovan kingdom shower?
         <<playSound king_thinking2>>
         <<getLaugh 1>> 
         <<jump Question5>>
-
     -> Once in a green moon
         King: That’s not how the saying goes… You’re mocking me, aren’t you?
         <<playSound king_mocking>>
         <<loseLife 1>>
         <<jump Question5>>
-
     -> Once in a blue moon
         King: That’s not how the saying goes… You’re mocking me, aren’t you? 
         <<playSound king_mocking>>
@@ -145,17 +133,14 @@ Jester: How often do the people of the Orkovan kingdom shower?
 title:Question5
 tags:
 ---
-
     -> You seem to be pretty frustrated. Could I make a suggJESTion to cheer you up?
         King: A pun? I hate puns!
         <<playSound king_angry2>>
         <<loseLife 1>>
-        
     -> Did you see the king of Kerven? He has less wits than a bowl of rice!
         King: That would have to be a very eloquent bowl of rice. I love that man.
         <<playSound king_angry2>>
         <<loseLife 1>>
-
     -> Out of all the kingdoms in this land, this is certainly one of them.
         <<getLaugh 1>> 
 
