@@ -63,8 +63,8 @@ public class GameManager : MonoBehaviour
             playSound
             );
         dr.AddCommandHandler<string>(
-            "switchScreen",
-            switchScreen    
+            "switchScene",
+            switchScene
             );
     }
     // Start is called before the first frame update
@@ -201,7 +201,7 @@ public class GameManager : MonoBehaviour
         tpc.SprintSpeed = 5.3f;
     }
 
-    public void switchScreen(string name)
+    public void switchScene(string name)
     {
         SceneManager.LoadScene(name);
     }
